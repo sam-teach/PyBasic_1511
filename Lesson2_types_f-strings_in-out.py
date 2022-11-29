@@ -93,3 +93,12 @@ hello_message = f'Привет {name}, тебе действительно {age}
 print(hello_message)
 old_hello_message = 'Привет ' + name + ', тебе действительно ' + str(age) + ' лет?'
 print(old_hello_message)
+print('in/out')
+# input() - функция возвращающая данные введенные с клавиатуры в виде СТРОКИ
+# input('напиши что нибудь') - выведет в консоли приглашающее сообщение
+# name = input('Введи свое имя: ')
+# age = int(input('Введи свой возраст: '))
+# print('name', name, type(name))
+# print('age', age, type(age))
+
+
