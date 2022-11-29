@@ -86,3 +86,10 @@ print(not 4 > 8)
 print('in')
 print('a' in 'Anton')
 print('a' in 'Mila')
+print('-----------f-строки-----------')
+age = 12
+name = 'Taras'
+hello_message = f'Привет {name}, тебе действительно {age} лет?'
+print(hello_message)
+old_hello_message = 'Привет ' + name + ', тебе действительно ' + str(age) + ' лет?'
+print(old_hello_message)
