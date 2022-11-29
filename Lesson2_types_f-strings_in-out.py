@@ -101,4 +101,19 @@ print('in/out')
 # print('name', name, type(name))
 # print('age', age, type(age))
 
+# примеры
+a = float(input("Введите а: "))
+b = float(input("Введите b: "))
+print(f'{a} + {b} = {a + b}')
+
+r = float(input('Введите радиус окружности: '))
+print(f'Длиннa окружности {3.14 * r ** 2}')
+
+number = int(input('Введите целое трехзначное число: '))
+print(
+    f'В этом числе '
+    f'{number % 10} единиц,'
+    f' {number // 10 % 10} десятков, '
+    f'{number // 100} сотен'
+)
 
