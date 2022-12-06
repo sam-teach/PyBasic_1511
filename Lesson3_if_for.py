@@ -126,3 +126,10 @@ print()
 
 for num in range(start_number + start_number % 2, end_number + 1, 2):
     print(num, end=' ')
+
+
+enter = int(input('Enter your number'))
+if enter / 1 == enter and enter % 2 == True and enter != 1 and enter != -1:
+    print('YES! This is prime number.')
+else:
+    print('NO! This is not prime number')
