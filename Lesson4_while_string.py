@@ -70,4 +70,26 @@ print(type(i), i)
 my_string = 'some new string'
 print(my_string)
 
+print(my_string.split())
+print(my_string.split(sep='s'))
+print(my_string.upper())
+print(my_string)
+symbol = '1'
+print(symbol.isdigit())
+print(symbol.isalpha())
+print(symbol.isalnum())
+print(my_string2)
+print(my_string2.find('t'))
+print(my_string2.find('tr'))
+print(my_string2.find('k'))
+
+print(my_string2.replace('i', 'O'))
+print(my_string)
+print(my_string.replace('s', '***'))
+
+print('{}, {}, {}')
+print('{}, {}, {}'.format(12, 'Apple', 'сорок два'))
+print('{1}, {2}, {0}'.format(12, 'Apple', 'сорок два'))
+print('{c}, {a}, {b}'.format(a=12, b='Apple', c='сорок два'))
+
 
