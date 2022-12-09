@@ -46,13 +46,41 @@
 # print()
 
 # изменение списка
-li = [1, 2, 3, 4, 5, 6]
-print(li)
-li[3] = 999
-print(li)
-li[1:4] = [111, 222]
-print(li)
-# li[::2]=[5,55,555]
+# li = [1, 2, 3, 4, 5, 6]
 # print(li)
-li[2], li[3] = li[3], li[2]
+# li[3] = 999
+# print(li)
+# li[1:4] = [111, 222]
+# print(li)
+# # li[::2]=[5,55,555]
+# # print(li)
+# li[2], li[3] = li[3], li[2]
+# print(li)
+
+# методы списков
+
+
+li = [1, 4, 2, 6, 2, 7, 2, 9, 5]
+# добавление элемента
+li.append('blabla')
 print(li)
+# вставляет по индексу переданный элемент
+li.insert(3, [1, 2, 3])
+print(li)
+# возвращает индекс первого совпавшего элемента
+print(li.index(2))
+# возвращает количество совпадающих с переданным элементов
+print(li.count(2))
+# сортировка списка(reverse-обратная)
+# li.sort(reverse=True)
+# print(li)
+import copy
+li2 = copy.deepcopy(li)
+print('li', li)
+print('li2', li2)
+li[4:8] = [1]
+print('li', li)
+print('li2', li2)
+li[3][1] = 777
+print('li', li)
+print('li2', li2)
