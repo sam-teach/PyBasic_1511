@@ -58,29 +58,41 @@
 # print(li)
 
 # методы списков
-
-
-li = [1, 4, 2, 6, 2, 7, 2, 9, 5]
-# добавление элемента
-li.append('blabla')
-print(li)
-# вставляет по индексу переданный элемент
-li.insert(3, [1, 2, 3])
-print(li)
-# возвращает индекс первого совпавшего элемента
-print(li.index(2))
-# возвращает количество совпадающих с переданным элементов
-print(li.count(2))
-# сортировка списка(reverse-обратная)
-# li.sort(reverse=True)
+# li = [1, 4, 2, 6, 2, 7, 2, 9, 5]
+# # добавление элемента
+# li.append('blabla')
 # print(li)
-import copy
-li2 = copy.deepcopy(li)
-print('li', li)
-print('li2', li2)
-li[4:8] = [1]
-print('li', li)
-print('li2', li2)
-li[3][1] = 777
-print('li', li)
-print('li2', li2)
+# # вставляет по индексу переданный элемент
+# li.insert(3, [1, 2, 3])
+# print(li)
+# # возвращает индекс первого совпавшего элемента
+# print(li.index(2))
+# # возвращает количество совпадающих с переданным элементов
+# print(li.count(2))
+# # сортировка списка(reverse-обратная)
+# # li.sort(reverse=True)
+# # print(li)
+# import copy
+# li2 = copy.deepcopy(li)
+# print('li', li)
+# print('li2', li2)
+# li[4:8] = [1]
+# print('li', li)
+# print('li2', li2)
+# li[3][1] = 777
+# print('li', li)
+# print('li2', li2)
+
+# генераторы списков
+from random import randint
+
+li = [i for i in range(20)]
+print(li)
+li2 = [i * 2 for i in range(20)]
+print(li2)
+li3 = ['vasa' for i in range(20)]
+print(li3)
+li4 = [randint(1, 100) for i in range(20)]
+print(li4)
+li5 = [randint(1, 100) for i in range(20) if i % 2 == 0]
+print(li5)
