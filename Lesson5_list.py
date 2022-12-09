@@ -29,3 +29,18 @@ print(li[5][1])  # список в списке
 print(li[3:6])  # срезы
 size = len(li)
 print(size)
+print(li[-2])  # отрицательный индекс позволит обращаться с конца списка
+# перебор списка по индексу
+for i in range(len(li)):
+    print(li[i], end=' ')
+print()
+# перебор списка по элементно
+for i in li:
+    print(i, end=' ')
+print()
+# перебор списка по индексу
+i = 0
+while i < len(li):
+    print(li[i], end=' ')
+    i += 1
+print()
