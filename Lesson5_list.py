@@ -23,24 +23,36 @@
 
 # обращение к элементам
 #     0  1  2  3  4  5 0    1    2     6
-li = [1, 2, 3, 4, 5, ['a', 'b', 'c'], 'Anna']
-print(li[5])
-print(li[5][1])  # список в списке
-print(li[3:6])  # срезы
-size = len(li)
-print(size)
-print(li[-2])  # отрицательный индекс позволит обращаться с конца списка
-# перебор списка по индексу
-for i in range(len(li)):
-    print(li[i], end=' ')
-print()
-# перебор списка по элементно
-for i in li:
-    print(i, end=' ')
-print()
-# перебор списка по индексу
-i = 0
-while i < len(li):
-    print(li[i], end=' ')
-    i += 1
-print()
+# li = [1, 2, 3, 4, 5, ['a', 'b', 'c'], 'Anna']
+# print(li[5])
+# print(li[5][1])  # список в списке
+# print(li[3:6])  # срезы
+# size = len(li)
+# print(size)
+# print(li[-2])  # отрицательный индекс позволит обращаться с конца списка
+# # перебор списка по индексу
+# for i in range(len(li)):
+#     print(li[i], end=' ')
+# print()
+# # перебор списка по элементно
+# for i in li:
+#     print(i, end=' ')
+# print()
+# # перебор списка по индексу
+# i = 0
+# while i < len(li):
+#     print(li[i], end=' ')
+#     i += 1
+# print()
+
+# изменение списка
+li = [1, 2, 3, 4, 5, 6]
+print(li)
+li[3] = 999
+print(li)
+li[1:4] = [111, 222]
+print(li)
+# li[::2]=[5,55,555]
+# print(li)
+li[2], li[3] = li[3], li[2]
+print(li)
