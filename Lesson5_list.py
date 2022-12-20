@@ -96,3 +96,4 @@ li4 = [randint(1, 100) for i in range(20)]
 print(li4)
 li5 = [randint(1, 100) for i in range(20) if i % 2 == 0]
 print(li5)
+
