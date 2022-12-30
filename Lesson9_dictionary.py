@@ -78,32 +78,49 @@
 # print()
 # print('Your price is ', end='')
 # print(sum(product['price'] for product in cart))
-from random import randint
-from time import sleep
+# from random import randint
+# from time import sleep
+#
+# cube_dict = {
+#     1: 'this is 1',
+#     2: 'this is 2',
+#     3: 'this is 3',
+#     4: 'this is 4',
+#     5: 'this is 5',
+#     6: 'this is 6',
+# }
+# while True:
+#     choice = input('Playing game? Y/N')
+#     if choice == 'Y':
+#         comp = randint(1, 7)
+#         sleep(2)
+#         print(f'Computer turn: {cube_dict[comp]}')
+#         user = 0
+#         roll = input('You rolling, print "roll"')
+#         if roll == 'roll':
+#             user = randint(1, 7)
+#             sleep(2)
+#             print(f'Your turn is {cube_dict[user]}')
+#         if user > comp:
+#             print('You win')
+#         else:
+#             print('You lose')
+#     else:
+#         break
 
-cube_dict = {
-    1: 'this is 1',
-    2: 'this is 2',
-    3: 'this is 3',
-    4: 'this is 4',
-    5: 'this is 5',
-    6: 'this is 6',
-}
-while True:
-    choice = input('Playing game? Y/N')
-    if choice == 'Y':
-        comp = randint(1, 7)
-        sleep(2)
-        print(f'Computer turn: {cube_dict[comp]}')
-        user = 0
-        roll = input('You rolling, print "roll"')
-        if roll == 'roll':
-            user = randint(1, 7)
-            sleep(2)
-            print(f'Your turn is {cube_dict[user]}')
-        if user > comp:
-            print('You win')
-        else:
-            print('You lose')
-    else:
-        break
+'''
+распаковка кортежа
+'''
+
+my_tuple = (1, 2, 4, 'qwe', 404)
+v1, v2, v3, v4, v5 = my_tuple
+print(v1, v2, v3)
+
+v1, _, _, v4, v5 = my_tuple
+print(v1, v4, _)
+v1, v2, *_ = my_tuple
+
+print(*my_tuple)
+print(my_tuple)
+
+
