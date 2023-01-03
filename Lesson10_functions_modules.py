@@ -28,40 +28,72 @@
 # #         result_list.append(i['name'])
 # # print(result_list)
 
+# '''
+# def имя_функции(аргумент(ы)):
+#     """строка документации"""
+#     тело функции (операторы)(код)
+# '''
+#
+#
+# def function_name():
+#     """описание функции"""
+#     pass
+#
+#
+# def print_hello():
+#     '''печатает hello'''
+#     print('hello')
+#
+#
+# def print_named_hello(name):
+#     '''печатает именованное приветствие'''
+#     print(f'Hello my dear {name}')
+#
+#
+# def get_named_hello(name: str) -> str:
+#     '''возвращает именованное приветствие'''
+#     return f'Hello my dear {name}'
+#
+#
+# def calc(num1, op: str, num2):
+#     return eval(f'{num1}{op}{num2}')
+#
+#
+# print_hello()
+# print_named_hello('Vasiliy')
+# named_hello = get_named_hello('Vasiliy')
+# print(type(named_hello), named_hello)
+# print(calc(3.2, '+', 5))
+# print(get_named_hello.__doc__)
+''' аргументы по умолчанию'''
+
+
+def fun(arg1='qw', arg2=123):
+    print(arg1, arg2)
+
+
+fun(2, 'asd')
+fun(12)
+fun()
+
 '''
-def имя_функции(аргумент(ы)):
-    """строка документации"""
-    тело функции (операторы)(код)
+именованые аргументы
+'''
+fun(arg2='Sigizmund')
+# print('asd', end=' ')
+
+'''
+переменное количество аргументов
 '''
 
 
-def function_name():
-    """описание функции"""
-    pass
+def fun2(*names):
+    print(names)
+    # for i in names:
+    #     print(i, end=' ')
+    # print()
 
 
-def print_hello():
-    '''печатает hello'''
-    print('hello')
-
-
-def print_named_hello(name):
-    '''печатает именованное приветствие'''
-    print(f'Hello my dear {name}')
-
-
-def get_named_hello(name: str) -> str:
-    '''возвращает именованное приветствие'''
-    return f'Hello my dear {name}'
-
-
-def calc(num1, op: str, num2):
-    return eval(f'{num1}{op}{num2}')
-
-
-print_hello()
-print_named_hello('Vasiliy')
-named_hello = get_named_hello('Vasiliy')
-print(type(named_hello), named_hello)
-print(calc(3.2, '+', 5))
-print(get_named_hello.__doc__)
+n = 'Anton', 'Andrew', 'Anna', 'Grigoriy', 123
+fun2(n)
+fun2(13)
