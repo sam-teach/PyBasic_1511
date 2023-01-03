@@ -65,35 +65,60 @@
 # print(type(named_hello), named_hello)
 # print(calc(3.2, '+', 5))
 # print(get_named_hello.__doc__)
-''' аргументы по умолчанию'''
+# ''' аргументы по умолчанию'''
+#
+#
+# def fun(arg1='qw', arg2=123):
+#     print(arg1, arg2)
+#
+#
+# fun(2, 'asd')
+# fun(12)
+# fun()
+#
+# '''
+# именованые аргументы
+# '''
+# fun(arg2='Sigizmund')
+# # print('asd', end=' ')
+#
+# '''
+# переменное количество аргументов
+# '''
+#
+#
+# def fun2(*names):
+#     print(names)
+#     # for i in names:
+#     #     print(i, end=' ')
+#     # print()
+#
+#
+# n = 'Anton', 'Andrew', 'Anna', 'Grigoriy', 123
+# fun2(n)
+# fun2(13)
+'''
+модули
+'''
+# подключение
+# import Lesson10_example_module
+#
+# Lesson10_example_module.fun()
+#
+# print(dir(Lesson10_example_module))
 
+# произвольное имя модуля
+# import Lesson10_example_module as LE10
+#
+# print(LE10.calc(1, '+', 3))
 
-def fun(arg1='qw', arg2=123):
-    print(arg1, arg2)
+# импорт отдельного элемента из модуля
+# from Lesson10_example_module import num
+#
+# print(num)
 
+# импорт всех элементов из модуля
+from Lesson10_example_module import *
 
-fun(2, 'asd')
-fun(12)
+print(num)
 fun()
-
-'''
-именованые аргументы
-'''
-fun(arg2='Sigizmund')
-# print('asd', end=' ')
-
-'''
-переменное количество аргументов
-'''
-
-
-def fun2(*names):
-    print(names)
-    # for i in names:
-    #     print(i, end=' ')
-    # print()
-
-
-n = 'Anton', 'Andrew', 'Anna', 'Grigoriy', 123
-fun2(n)
-fun2(13)
