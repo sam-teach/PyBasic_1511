@@ -29,31 +29,62 @@
 # with open('files/test.txt', 'a') as file:
 #     file.write('еще одна очень важная строка\n')
 
+# '''
+# чтение из файла
+# '''
+#
+# with open('files/test.txt', 'r') as file:
+#     print('read')
+#     result = file.read()
+#     print(result)
+#
+# with open('files/test.txt', 'r') as file:
+#     print('readline')
+#     result = file.readline()
+#     print(result)
+#
+# with open('files/test.txt', 'r') as file:
+#     print('readlines')
+#     result = file.readlines()
+#     print(result)
+#
+# with open('files/test.txt', 'r') as file:
+#     print('read(4)')
+#     result = file.read(4)
+#     print(result)
+#
+# with open('files/test.txt', 'r') as file:
+#     print('for')
+#     for line in file:
+#         print(line,end='')
+
 '''
-чтение из файла
+функции для обработки файлов
 '''
 
-with open('files/test.txt', 'r') as file:
-    print('read')
-    result = file.read()
-    print(result)
 
-with open('files/test.txt', 'r') as file:
-    print('readline')
-    result = file.readline()
-    print(result)
+def read_txt_file(filename: str):
+    with open(filename, 'r') as file:
+        data = file.read()
+    return data
 
-with open('files/test.txt', 'r') as file:
-    print('readlines')
-    result = file.readlines()
-    print(result)
 
-with open('files/test.txt', 'r') as file:
-    print('read(4)')
-    result = file.read(4)
-    print(result)
+def write_txt_file(filename: str, data):
+    with open(filename, 'w') as file:
+        file.write(str(data))
 
-with open('files/test.txt', 'r') as file:
-    print('for')
-    for line in file:
-        print(line,end='')
+
+# some_data = [1, 2, 3, 4, 'qwe', 6]
+# write_txt_file('files/test2.txt', some_data)
+# res=read_txt_file('files/test2.txt')
+# print(list(res))
+
+text = read_txt_file('files/London.txt')
+result={}
+for word in text.split():
+    if word not in result:
+        result[word]=1
+    else:
+        result[word]+=1
+
+print(result)
