@@ -20,11 +20,40 @@
 #     print(my_file.name)
 # print()
 
-'''
-запись в файл
-'''
-with open('files/test.txt', 'w') as file:
-    file.write('очень важная строка\n')
+# '''
+# запись в файл
+# '''
+# with open('files/test.txt', 'w') as file:
+#     file.write('очень важная строка\n')
+#
+# with open('files/test.txt', 'a') as file:
+#     file.write('еще одна очень важная строка\n')
 
-with open('files/test.txt', 'a') as file:
-    file.write('еще одна очень важная строка\n')
+'''
+чтение из файла
+'''
+
+with open('files/test.txt', 'r') as file:
+    print('read')
+    result = file.read()
+    print(result)
+
+with open('files/test.txt', 'r') as file:
+    print('readline')
+    result = file.readline()
+    print(result)
+
+with open('files/test.txt', 'r') as file:
+    print('readlines')
+    result = file.readlines()
+    print(result)
+
+with open('files/test.txt', 'r') as file:
+    print('read(4)')
+    result = file.read(4)
+    print(result)
+
+with open('files/test.txt', 'r') as file:
+    print('for')
+    for line in file:
+        print(line,end='')
