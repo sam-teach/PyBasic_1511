@@ -85,7 +85,18 @@ class PlayWithFolder:
             os.remove(file_path)
 
 
-my_object = PlayWithFolder()
-my_object.create_files()
-my_object.tanos_click()
-my_object.tanos_click()
+# my_object = PlayWithFolder()
+# my_object.create_files()
+# my_object.tanos_click()
+# my_object.tanos_click()
+
+directory = 'files'
+fi = 'files\London.txt'
+print('os.path.isfile(directory) -> ', os.path.isfile(directory))
+print('os.path.isfile(fi) -> ', os.path.isfile(fi))
+print('os.path.isdir(directory) -> ', os.path.isdir(directory))
+print('os.path.isdir(fi) -> ', os.path.isdir(fi))
+'''
+os.path.isfile(путь) - является ли заданный элемент файлом
+os.path.isdir(путь) - является ли заданный элемент папкой
+'''
