@@ -61,3 +61,5 @@ print(int(s))
 print(s.__getattribute__('age'))
 print(str(s2))
 print(int(s) + int(s2))
+
+
