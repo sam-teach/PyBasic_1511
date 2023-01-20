@@ -100,3 +100,4 @@ print('os.path.isdir(fi) -> ', os.path.isdir(fi))
 os.path.isfile(путь) - является ли заданный элемент файлом
 os.path.isdir(путь) - является ли заданный элемент папкой
 '''
+
