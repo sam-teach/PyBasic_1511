@@ -158,7 +158,8 @@ def random_uni(my_str1, my_str2):
 print(random_uni('abcade', 'ahjkl'))
 
 
-string.as
+
+
 
 def get_common_symbols(my_str1: str, my_str2: str) -> list:
     result_list = list(set(my_str1).intersection(set(my_str2)))
